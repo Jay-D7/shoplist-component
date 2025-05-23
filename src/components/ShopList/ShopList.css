@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+/* ShopList */
+.shop-list-grid {
+  @apply box-border p-2;
+}
+
+.grid-container {
+  @apply mx-auto box-border min-h-screen w-full max-w-6xl flex-col items-center;
+  /* Get rid of scroll - add - overflow-x-hidden" */
+}
+
+/* Wrapper */
+.shop-list-wrapper {
+  @apply flex min-h-screen w-full items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] p-5;
+}
+
+.error-handler {
+  @apply flex min-h-screen items-center justify-center;
+}
+
+.handler-text {
+  @apply text-lg text-gray-500;
+}
+
+.handler-text-error {
+  @apply text-lg text-red-500;
+}
+
+/* RowComponent  */
+.shop-card {
+  @apply mx-auto flex w-full max-w-sm flex-col items-center rounded-xl border border-[#334155] bg-[#1e293b] p-6 shadow-xl transition-colors duration-300 hover:bg-amber-800 hover:shadow-2xl;
+}
+
+.shop-image {
+  @apply mb-4 h-40 w-full rounded-lg bg-[#334155] object-cover;
+}
+
+.shop-id {
+  @apply text-xs text-gray-400;
+}
+
+.shop-type {
+  @apply rounded-full px-3 py-1 text-xs font-semibold;
+}
+
+.shop-type-franchise {
+  @apply bg-blue-900 text-blue-300;
+}
+
+.shop-type-regular {
+  @apply bg-green-900 text-green-300;
+}
+
+.shop-address {
+  @apply mb-2 text-right text-gray-400;
+}
+
+.shop-button {
+  @apply w-full rounded bg-gradient-to-r from-blue-700 to-blue-500 px-4 py-2 font-semibold text-white transition-colors hover:from-blue-600 hover:to-blue-400;
+}
